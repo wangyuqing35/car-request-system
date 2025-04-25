@@ -1,0 +1,99 @@
+.request-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #f0f2f5;
+}
+
+.request-card {
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.request-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 0 24px;
+}
+
+.request-card .ant-card-head-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.request-form {
+  padding: 24px;
+}
+
+.form-section {
+  margin-bottom: 24px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-section:last-child {
+  margin-bottom: 0;
+}
+
+.form-input {
+  width: 100%;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.form-input:hover,
+.form-input:focus {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.time-range {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.time-range .ant-form-item {
+  flex: 1;
+}
+
+.submit-section {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.submit-button {
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 4px;
+  background: linear-gradient(45deg, #1890ff, #096dd9);
+  border: none;
+  transition: all 0.3s;
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.4);
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .request-container {
+    padding: 20px;
+  }
+
+  .time-range {
+    flex-direction: column;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+} 

@@ -1,0 +1,126 @@
+.request-list-container {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: 100vh;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.request-list-header {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.request-list-search {
+  width: 300px;
+}
+
+.request-list-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.request-list-table {
+  margin-top: 24px;
+}
+
+.request-list-table .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 500;
+}
+
+.request-list-table .ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+.request-list-modal {
+  max-width: 800px;
+}
+
+.request-list-modal-content {
+  padding: 24px;
+}
+
+.request-list-modal-footer {
+  margin-top: 24px;
+  text-align: right;
+}
+
+.create-button {
+  margin-bottom: 24px;
+}
+
+.request-list-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.request-list-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 24px;
+}
+
+.request-list-card .ant-card-head-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.request-list-card .ant-card-body {
+  padding: 24px;
+}
+
+.request-list-card .ant-table {
+  background: #fff;
+}
+
+.request-list-card .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.request-list-card .ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+.detail-content {
+  padding: 24px;
+}
+
+.detail-item {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.detail-item strong {
+  width: 100px;
+  color: #666;
+  flex-shrink: 0;
+}
+
+.detail-item span {
+  flex: 1;
+  color: #1a1a1a;
+}
+
+/* 响应式布局 */
+@media (max-width: 1200px) {
+  .request-list-container {
+    padding: 16px;
+  }
+  
+  .request-list-card {
+    padding: 16px;
+  }
+} 
